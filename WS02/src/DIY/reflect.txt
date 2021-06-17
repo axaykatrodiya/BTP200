@@ -1,0 +1,51 @@
+//==============================================
+// Name           : AKSHAY MUKESHBHAI KATRODIYA
+// Email          : amkatrodiya@myseneca.ca
+// Student ID     : 125298208
+// Section        : NAA
+// Date           : 06/06/2021(Sunday)
+//==============================================
+
+
+In this week's class and Through this workshop i learn the concept of overloading of the
+function, Dynamic memory and pass by reference. First of all I learn how to use dynamic
+memory. Unlike static memory, dynamic memory can be allocated as much as file size or as
+much as user wants. e.g. in LAB part of the workshop when we get input for employee name
+from CSV file, we stored it in (char name[128]) as we dont know the size of employee name
+In this case we waste memory by allocating extra bytes for name However when we know the
+size of employee's name then we only had to allocate the corresponding number of memory
+using (new). with the help of "new" we can assign type and size to the pointer variable.
+For example: employees = new Employee[noOfEmployees]. Now as we allocate dynamic memory
+we must have to delete it before terminating the program. if we don't deallocate the memory
+is can cause the memory leakage. We use (delete []) to deallocate memory. Secondly i learned
+about overloaded functions which is little confusing for me to understand like which parameter
+to use during workshop. basically overload function means several function sharing same name.
+In this workshop's part1 three overloaded functions were used. read, load and display are three
+function that we make overloaded while doing this workshop. their prototypes are as below:
+
+
+Function overload of load:
+1) bool load(Employee &emp);
+2) bool load();
+
+Function overload of display:
+1) void display( const Employee &emp);
+2) void display();
+
+Function overload of read:
+1) bool read(char *empName);
+2) bool read(int &empNum);
+3) bool read(double &empSa);
+
+parameter is the key point which differentiate overloaded functions. parameter help in identifying
+the functions. In last, i learn about pass by reference. In passing by reference we pass actual value
+to the function rather than the copy of it. 
+
+---> in and out parameters.
+basically out parameter are those which are passed by address or reference. whereas in parameters
+are those which are passing by value or constant. I used out parameters more than in parameters in this 
+workshop. We can modify out parameters but we cannot modify in parameters. we can distinguish out and in
+parameters through keyword like if parameters with a reference or pointer are out parameters while const
+or passed by value parameters are in parameters. I can think of one in parametered functions : 
+"bool openFile(const char filename[])", in this function we can only read data from file but cann't modify
+data of the file, so i think it is the one of the example of in parametered function.
